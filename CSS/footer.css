@@ -30,3 +30,15 @@ footer{
 .fin-categorie div a{
     padding-bottom: 0.5rem;
 }
+
+.fin-message{
+    height: 3rem; 
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3C62B4;
+}
+.fin-message p{
+    padding: 1rem;
+}
