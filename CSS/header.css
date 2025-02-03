@@ -8,6 +8,10 @@
     justify-content: space-between;
     align-items: center;
 }
+.logo{
+    display: flex;
+    margin-left: 1rem;
+}
 
 .lien-header{
     width: 25vw;
