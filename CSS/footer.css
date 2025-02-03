@@ -24,11 +24,11 @@ footer{
     flex-direction: column;
 }
 .fin-categorie div p{
-    padding-bottom: 0.5rem;
+    padding-bottom: 1rem;
     font-weight: bolder;
 }
 .fin-categorie div a{
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.75rem;
 }
 
 .fin-message{
