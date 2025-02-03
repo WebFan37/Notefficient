@@ -1,0 +1,23 @@
+.header{
+    height: 4rem;
+    width: 100vw;
+    color: white;
+    background-color: #14306C;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lien-header{
+    width: 25vw;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.header p{
+    padding: 1rem;
+}

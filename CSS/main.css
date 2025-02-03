@@ -1,0 +1,16 @@
+body{
+    background-color: #CDF2FF;
+    font-family: "Fredoka", serif;
+}
+.overview{
+    height: 100vh;
+    background-color: #CDF2FF;
+}
+.intro{
+    height: 100vh;
+    background-color: aqua;
+}
+.introUI{
+    height: 100vh;
+    background-color: bisque;
+}
