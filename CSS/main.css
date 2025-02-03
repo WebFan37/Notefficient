@@ -2,15 +2,19 @@ body{
     background-color: #CDF2FF;
     font-family: "Fredoka", serif;
 }
-.overview{
+.UI-Note{
     height: 100vh;
     background-color: #CDF2FF;
 }
-.intro{
+.Design{
     height: 100vh;
-    background-color: aqua;
+    background-color: #7accea;
 }
-.introUI{
+.UI-Description{
     height: 100vh;
-    background-color: bisque;
+    background-color: #2d6f88;
+}
+.intro-app{
+    height: 100vh;
+    background-image:linear-gradient(180deg, #CDF2FF, #00B0EE, #007BEE);
 }
