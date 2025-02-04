@@ -5,7 +5,17 @@ body{
 .UI-Note{
     height: 100vh;
     background-color: #CDF2FF;
+   
 }
+.UI-Note div{
+    text-align: center;
+}
+.UI-Note img{
+    width: 80vw;
+    height:auto;
+      
+}
+
 .Design{
     height: 100vh;
     background-color: #7accea;
