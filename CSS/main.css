@@ -12,19 +12,49 @@ body{
 }
 .UI-Note img{
     width: 80vw;
-    height:auto;
+    height:fit-content;
       
 }
 
 .Design{
     height: 100vh;
-    background-color: #7accea;
+    display: flex;
 }
+.Design img{
+    width: 75vw;
+    height:fit-content;
+}
+.Design div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .UI-Description{
     height: 100vh;
-    background-color: #2d6f88;
 }
 .intro-app{
+    position: relative;
     height: 100vh;
     background-image:linear-gradient(180deg, #CDF2FF, #00B0EE, #007BEE);
+}
+.intro-app .cercle1{
+    position: absolute;
+    top: 25%;
+    left: -200px;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-color: #01A3EE;
+}
+.intro-app .cercle2{
+    position: absolute;
+    top: 25%;
+    right: -200px;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-color: #01A3EE;
+    
 }
