@@ -20,6 +20,21 @@ body{
     height: 100vh;
     display: flex;
 }
+/* initialise the animation */
+.Design img.donnerAnimation{
+    animation: slideIn 1s ease-in-out;
+}
+/* create the animation */
+@keyframes slideIn{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+
 .Design img{
     width: 75vw;
     height:fit-content;
