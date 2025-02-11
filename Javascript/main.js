@@ -21,10 +21,10 @@ window.onscroll = () => {
 
         // Si on est dans la section, ajouter classe animation
         if (distanceScroll >= offset && distanceScroll < offset + sectionHeight ){
-            sec.classList.add('donnerAnimation');
+            //sec.classList.add('donnerAnimation');
             // console.log("On est dans la section")
         }else{
-            sec.classList.remove('donnerAnimation');
+            //sec.classList.remove('donnerAnimation');
             // console.log("On est pas dans la section")
         }
         

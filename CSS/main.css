@@ -1,6 +1,8 @@
 body{
     background-color: #CDF2FF;
     font-family: "Fredoka", serif;
+    margin: 0;
+    padding: 0;
 }
 .UI-Note{
     height: 100vh;
@@ -20,11 +22,13 @@ body{
     height: 100vh;
     display: flex;
 }
-/* initialise the animation */
-.Design img.donnerAnimation{
-    animation: slideIn 1s ease-in-out;
+
+
+
+.donnerAnimation{
+    animation: slideIn 1.2s ease-in-out;
 }
-/* create the animation */
+
 @keyframes slideIn{
     0%{
         transform: translateX(-100%);
@@ -72,4 +76,33 @@ body{
     border-radius: 50%;
     background-color: #01A3EE;
     
+}
+.intro-app .intro-text{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.intro-app .message-fin{
+    font-size: 1.25rem;
+    font-weight: lighter;
+    color: white;
+    position: absolute;
+    bottom: 3%;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+.intro-app .message-fin img{
+    border-radius: 15px;
+}
+.intro-app .message-fin img:hover{
+   box-shadow: 2px 2px 3px 2px #78beff;
+   transition: all 0.7s;
 }
