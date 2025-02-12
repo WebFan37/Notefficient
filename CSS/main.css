@@ -11,6 +11,7 @@ body{
 }
 .UI-Note div{
     text-align: center;
+    /* opacity: 0; */
 }
 .UI-Note img{
     width: 80vw;
@@ -25,16 +26,33 @@ body{
 
 
 
-.donnerAnimation{
+.donnerAnimation, .AnimationImg{
+    animation: opacity 2.2s ease-in-out;
+}
+.donnerAnimationH2{
     animation: slideIn 1.2s ease-in-out;
+}
+.donnerAnimationPar{
+    animation: slideIn 1.2s ease-in-out;
+    animation-delay: 200ms;
+
 }
 
 @keyframes slideIn{
     0%{
-        transform: translateX(-100%);
+        transform: translateX(100%);
     }
     100%{
         transform: translateX(0%);
+    }
+}
+
+@keyframes opacity {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
     }
 }
 
@@ -58,24 +76,27 @@ body{
     height: 100vh;
     background-image:linear-gradient(180deg, #CDF2FF, #00B0EE, #007BEE);
 }
-.intro-app .cercle1{
+.intro-app .cercle1 {
     position: absolute;
     top: 25%;
-    left: -200px;
-    height: 400px;
-    width: 400px;
+    left: 0;
+    transform: translateX(-50%);
+    height: 25rem;
+    width: 25rem;
     border-radius: 50%;
     background-color: #01A3EE;
 }
-.intro-app .cercle2{
+
+.intro-app .cercle2 {
     position: absolute;
     top: 25%;
-    right: -200px;
-    height: 400px;
-    width: 400px;
+    right: 0;
+    transform: translateX(50%);
+    height: 25rem;
+    width: 25rem;
     border-radius: 50%;
     background-color: #01A3EE;
-    
+    overflow-x: hidden;
 }
 .intro-app .intro-text{
     width: 100vw;
