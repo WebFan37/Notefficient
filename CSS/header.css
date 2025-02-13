@@ -1,26 +1,58 @@
+
+
+/****************************************** */
+/* ECRAN ADAPTATIF */
+/****************************************** */
+@media screen and (min-width:700px) {
+    .header{
+        height: 4rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /* align-items: center; */
+    }
+    .logo{
+        display: flex;
+        margin-left: 1rem;
+    }
+
+    .lien-header{
+        width: 25vw;
+        height: 3rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+ 
+    
+}
+
+/****************************************** */
+/* ECRAN DEFAUT phone */
+/****************************************** */
+
 .header{
-    height: 4rem;
-    width: 100vw;
+    height: auto;
+    width: 100vw; 
     color: white;
     background-color: #14306C;
-    
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
 }
+
 .logo{
     display: flex;
     margin-left: 1rem;
+   
 }
-
 .lien-header{
-    width: 25vw;
+    width: 100vw;
     height: 3rem;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
+    justify-content:space-evenly;
 }
+
 
 .header p{
     padding: 1rem;

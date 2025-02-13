@@ -4,16 +4,10 @@ footer{
    background-color: #14306C;
    
 }
-.social{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 5rem;
-}
 
 .fin-categorie{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     padding: 1rem;
     margin-top: 2rem;
@@ -22,7 +16,9 @@ footer{
 .fin-categorie div{
     display: flex;
     flex-direction: column;
+    margin: 1rem;
 }
+
 .fin-categorie div p{
     padding-bottom: 1rem;
     font-weight: bolder;
@@ -31,19 +27,52 @@ footer{
     padding-bottom: 0.75rem;
 }
 
-.fin-message{
-    height: 3rem; 
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
+.social{
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    background-color: #3C62B4;
+    height: 5rem;
 }
-.fin-message p{
-    padding: 1rem;
-}
-.social-image{
-  width: 14rem;
-  display: flex;
-  justify-content: space-evenly;
+    .fin-message{
+        height:auto; 
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #3C62B4;
+    }
+    .fin-message p{
+        padding: 1rem;
+    }
+    .social-image{
+    width: 14rem;
+    display: flex;
+    justify-content: space-evenly;
+    }
+
+    
+/****************************************** */
+/* ECRAN ADAPTATIF */
+/****************************************** */
+@media screen and (min-width:700px) {
+    
+
+    .fin-categorie{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem;
+        margin-top: 2rem;
+
+
+    }
+    .fin-message{
+        flex-direction: row;
+    }
+    
+
+    
+
 }

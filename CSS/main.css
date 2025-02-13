@@ -4,28 +4,136 @@ body{
     margin: 0;
     padding: 0;
 }
-.UI-Note{
-    height: 100vh;
-    background-color: #CDF2FF;
+/****************************************** */
+    /* UI-NOTE SECTION 1*/
+    /****************************************** */
+    .UI-Note{
+        height: 100vh;
+        background-color: #CDF2FF;
+    
+    }
+    .UI-Note div{
+        text-align: center;
+       
+    }
+    .UI-Note img{
+        width: 80vw;
+        height:fit-content;
+        
+    }
+    /****************************************** */
+    /* DESIGN SECTION 2*/
+    /****************************************** */
+    .Design{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .Design img{
+        width: 100vw;
+        height:fit-content;
+    }
+    
+    .Design div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+ /****************************************** */
+    /* UI DESCRIPTION SECTION 3 */
+    /****************************************** */
+    .UI-Description{
+        height: 100vh;
+    } 
+    
+    
+    /****************************************** */
+    /* INTRO-APP SECTION 4 */
+    /****************************************** */
+    .intro-app{
+        position: relative;
+        height: 100vh;
+        background-image:linear-gradient(180deg, #CDF2FF, #00B0EE, #007BEE);
+    }
+
+    .intro-app .intro-text{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        color: white;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+       z-index: 3;
+    }
+    .intro-app .message-fin{
+        font-size: 1.25rem;
+        font-weight: lighter;
+        color: white;
+        position: absolute;
+        bottom: 3%;
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        
+    }
+    .intro-app .message-fin img{
+        border-radius: 15px;
+    }
+    .intro-app .message-fin img:hover{
+       box-shadow: 2px 2px 3px 2px #78beff;
+       transition: all 0.7s;
+    }
+    
+    .intro-app .cercle1 {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    transform: translateX(-50%);
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+    background-color: #01A3EE;
+    
+}
+
+.intro-app .cercle2 {
+    position: absolute;
+    top: 25%;
+    right: 0;
+    transform: translateX(50%);
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+    background-color: #01A3EE;
+    overflow-x: hidden;
    
 }
-.UI-Note div{
-    text-align: center;
-    /* opacity: 0; */
+    
+/************* ECRAN ADAPTATIF *************** */
+/****************************************** */
+
+@media screen and (min-width: 700px){
+
+    .Design {
+        flex-direction: row;
+    }
+    .Design img{
+        width: 75vw;
+        height:fit-content;
+    }
+
 }
-.UI-Note img{
-    width: 80vw;
-    height:fit-content;
-      
-}
-
-.Design{
-    height: 100vh;
-    display: flex;
-}
 
 
 
+/************* AJOUTER ANIMATION *************** */
+/****************************************** */
 .donnerAnimation, .AnimationImg{
     animation: opacity 2.2s ease-in-out;
 }
@@ -37,6 +145,9 @@ body{
     animation-delay: 200ms;
 
 }
+
+/************* ANIMATION SETUP *************** */
+/****************************************** */
 
 @keyframes slideIn{
     0%{
@@ -57,73 +168,5 @@ body{
 }
 
 
-.Design img{
-    width: 75vw;
-    height:fit-content;
-}
-.Design div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
-.UI-Description{
-    height: 100vh;
-}
-.intro-app{
-    position: relative;
-    height: 100vh;
-    background-image:linear-gradient(180deg, #CDF2FF, #00B0EE, #007BEE);
-}
-.intro-app .cercle1 {
-    position: absolute;
-    top: 25%;
-    left: 0;
-    transform: translateX(-50%);
-    height: 25rem;
-    width: 25rem;
-    border-radius: 50%;
-    background-color: #01A3EE;
-}
 
-.intro-app .cercle2 {
-    position: absolute;
-    top: 25%;
-    right: 0;
-    transform: translateX(50%);
-    height: 25rem;
-    width: 25rem;
-    border-radius: 50%;
-    background-color: #01A3EE;
-    overflow-x: hidden;
-}
-.intro-app .intro-text{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    color: white;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-}
-.intro-app .message-fin{
-    font-size: 1.25rem;
-    font-weight: lighter;
-    color: white;
-    position: absolute;
-    bottom: 3%;
-   
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;
-}
-.intro-app .message-fin img{
-    border-radius: 15px;
-}
-.intro-app .message-fin img:hover{
-   box-shadow: 2px 2px 3px 2px #78beff;
-   transition: all 0.7s;
-}
