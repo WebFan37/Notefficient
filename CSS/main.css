@@ -37,16 +37,54 @@ body{
     .Design div{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content:space-evenly;
+        align-items:flex-start;
     }
+   
     
  /****************************************** */
     /* UI DESCRIPTION SECTION 3 */
     /****************************************** */
     .UI-Description{
         height: 100vh;
-    } 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .image-UI {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        max-width: 90%;
+        margin: auto;
+    }
+    
+    .image-UI img {
+        width: 100%;
+        object-fit: cover;
+    }
+    .image-UI img:hover{
+        transform: scale(1.05);
+        transition: all 0.7s;
+        border: #007BEE 2px solid;
+    }
+    
+    
+    .image-UI img:first-child {
+        grid-row: 1 ;
+    }
+    
+    .image-UI img:nth-child(2) {
+        height: 100%;
+        object-fit: cover;
+    }
+    .image-UI img:nth-child(2) {
+        height: 50%;
+        object-fit: cover;
+    }
+    
+    
     
     
     /****************************************** */
