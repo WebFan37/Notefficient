@@ -10,7 +10,7 @@ const divNote = document.querySelector('.UI-Note div');
 window.onscroll = () => {
 
         //Get the top of the section
-        const distanceScrollUI = window.scrollY;
+        const distanceScrollNote = window.scrollY;
 
         //Get the height of the section
         const heightNote = UINote.offsetHeight;
@@ -22,7 +22,7 @@ window.onscroll = () => {
     
 
         // Si on est dans la section, ajouter classe animation
-        if (distanceScrollUI >= offsetUI && distanceScrollUI < offsetUI + heightNote ){
+        if (distanceScrollNote >= offsetUI && distanceScrollNote < offsetUI + heightNote ){
             divNote.classList.add('donnerAnimation');
            
         }else{
@@ -72,5 +72,49 @@ window.onscroll = () => {
             paragr.classList.remove("donnerAnimationPar")
         })
       
+    }
+}
+
+
+//==========================PAGE UI =====================//
+//===========================================================//
+
+//Grab la section UI
+const sectionUI = document.querySelector('.UI-Description');
+
+//Grab les images pour animation
+const images = document.querySelectorAll('.UI-Description img');
+
+
+window.onscroll = () => {
+    const distanceScrollUI = window.scrollY;
+    const heightUI = sectionUI.offsetHeight;
+    const offsetUI = sectionUI.offsetTop - 150;
+
+    
+
+
+    // Si on est dans la section, ajouter classe animation (BASE)
+    if (distanceScrollUI >= offsetUI && distanceScrollUI < offsetUI + heightUI){
+        images.forEach((img, index) => {
+            
+            setTimeout(() => {img.classList.add('donnerAnimationUI')}, index * 400)
+            
+        } )
+    } else {
+        images.forEach(img => {
+            img.classList.remove('donnerAnimationUI')
+        } )
+    }
+
+    //Nouveau ! ====//
+    //En défilant 50% de la section on ajoute une autre classe pour rentrer les paragraphes
+    const pointAnimation = offsetUI + heightUI * 0.5;
+
+    //Nouveau ! ====//
+    //Ajouter une autre classe pour introduire les paragraphes apres 50% de la section
+    if (distanceScrollUI >= pointAnimation && distanceScrollUI <= offsetUI + heightUI){
+        console.log("C'est le moment pour ajouter les paragraphes !")
+        
     }
 }

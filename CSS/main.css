@@ -16,10 +16,13 @@ body{
         text-align: center;
        
     }
+    .UI-Note div p:hover{
+        font-size: 1.25rem;
+        transition: all 0.7s;
+    }
     .UI-Note img{
         width: 80vw;
         height:fit-content;
-        
     }
     /****************************************** */
     /* DESIGN SECTION 2*/
@@ -40,7 +43,25 @@ body{
         justify-content:space-evenly;
         align-items:flex-start;
     }
+    .Design div p:hover{
+        
+        animation: translatePara 2.5s ease-in-out;
+    }
    
+    @keyframes translatePara {
+        0%{
+            transform: translateX(0%);
+            font-weight: 0;
+        }
+        50%{
+            transform: translateX(50%);
+            font-weight:bold;
+        }
+        100%{
+            transform: translateX(0%);
+            font-weight: 0;
+        }   
+    }
     
  /****************************************** */
     /* UI DESCRIPTION SECTION 3 */
@@ -67,7 +88,7 @@ body{
     .image-UI img:hover{
         transform: scale(1.05);
         transition: all 0.7s;
-        border: #007BEE 2px solid;
+        box-shadow: 2px 2px 5px 2px #86badf;
     }
     
     
@@ -179,9 +200,12 @@ body{
     animation: slideIn 1.2s ease-in-out;
 }
 .donnerAnimationPar{
-    animation: slideIn 1.2s ease-in-out;
-    animation-delay: 200ms;
+    animation: slideIn 1.2s ease-in-out 200ms;
 
+}
+.donnerAnimationUI{
+    animation: imageIntro 2.2s ease-in-out 200ms;
+    
 }
 
 /************* ANIMATION SETUP *************** */
@@ -201,6 +225,17 @@ body{
         opacity: 0;
     }
     100%{
+        opacity: 1;
+    }
+}
+
+@keyframes imageIntro {
+    0%{
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0%);
         opacity: 1;
     }
 }
