@@ -13,3 +13,7 @@ a{
 a:hover{
     color: #80c1ff;
 }
+.holder{
+    position: sticky;
+    top: 0;
+}

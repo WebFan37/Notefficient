@@ -69,3 +69,34 @@ function handleScrollUI() {
         console.log("C'est le moment pour ajouter les paragraphes !");
     }
 }
+
+
+//========================== PAGE VIDEO =====================//
+//===========================================================//
+
+//Section Video
+const sectionVideo = document.querySelector('.presentation-video');
+
+//Video 
+const video = document.querySelector('.presentation-video .holder video');
+
+//Video pause on load
+video.pause();
+
+
+const scroll = () => {
+    const distance = window.scrollY - sectionVideo.offsetTop;
+    const totalDistance = sectionVideo.clientHeight - window.innerHeight;
+
+    let percentage = distance / totalDistance;
+    percentage = Math.max(0, percentage);
+    percentage = Math.min(percentage, 1);
+
+
+    if (video.duration > 0){
+        video.currentTime = video.duration * percentage;
+    }
+};
+
+scroll()
+window.addEventListener('scroll', scroll);
