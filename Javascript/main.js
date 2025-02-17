@@ -19,8 +19,10 @@ function handleScrollNote() {
     //Ajouter animation apres 30% de la section
     if (scrollY >= offsetUI + heightNote * 0.3) {
         divNote.classList.add('donnerAnimation');
+        divNote.style.display = "flex";
     } else {
         divNote.classList.remove('donnerAnimation');
+        divNote.style.display = "none";
     }
 
     //Animation apres 50% de la section
@@ -35,7 +37,7 @@ function handleScrollNote() {
 const sectionDesign = document.querySelector('.Design');
 const h2 = document.querySelector('.Design div h2');
 const paragraphes = document.querySelectorAll('.Design div p');
-const image = document.querySelector('.Design img');
+
 
 function handleScrollDesign() {
     const scrollY = window.scrollY;
@@ -44,16 +46,17 @@ function handleScrollDesign() {
 
 
     //Ajouter animation lors qu'on rentre dans la section
-    if (scrollY >= offset && scrollY < offset + heightDesign) {
+    if (scrollY >=  offset + heightDesign * 0.05) {
         h2.classList.add('donnerAnimationH2');
-        image.classList.add('AnimationImg');
-
+        h2.style.display = "flex";
         paragraphes.forEach(paragr => paragr.classList.add("donnerAnimationPar"));
+        paragraphes.forEach(paragr => paragr.style.display = "flex");
     } else {
         h2.classList.remove('donnerAnimationH2');
-        image.classList.remove('AnimationImg');
+        h2.style.display = "none";
 
         paragraphes.forEach(paragr => paragr.classList.remove("donnerAnimationPar"));
+        paragraphes.forEach(paragr => paragr.style.display = "none");
     }
 }
 
@@ -68,12 +71,14 @@ function handleScrollUI() {
     // const pointAnimation = offsetUI + heightUI * 0.5; // 50% of the section
 
     // Image animation
-    if (scrollY >= offsetUI && scrollY < offsetUI + heightUI) {
+    if (scrollY >=  offsetUI + heightUI * 0.05) {
         images.forEach((img, index) => {
             setTimeout(() => img.classList.add('donnerAnimationUI'), index * 400);
+            img.style.display = "grid";
         });
     } else {
         images.forEach(img => img.classList.remove('donnerAnimationUI'));
+        images.forEach(img => img.style.display = "none");
     }
 
     // Paragraph introduction at 50% scroll
@@ -132,6 +137,10 @@ function handleScrollBienvenue (){
 
     //Ajouter animation de la dernièr paragraphe après 80% de la section
     if (scrollDistance >= offesetBienvenue + heightBienvenue * 0.8){
-       paragraphesBienvenue.classList.add("DonnerAnimationBienvenue"); 
+       paragraphesBienvenue.classList.add("DonnerAnimationBienvenue");
+       paragraphesBienvenue.style.display = "flex";
+    } else {
+        paragraphesBienvenue.classList.remove("DonnerAnimationBienvenue");
+       paragraphesBienvenue.style.display = "none";
     }
 }

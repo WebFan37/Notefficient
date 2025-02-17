@@ -14,7 +14,10 @@ body {
 }
 
 .UI-Note div {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .UI-Note div p:hover {
@@ -153,32 +156,37 @@ body {
 /****************************************** */
 .intro-app {
     position: relative;
-    height: 150vh;
+    height: 500vh;
     background-image: linear-gradient(180deg, #CDF2FF, #00B0EE, #007BEE);
 }
 
 .intro-app .intro-text {
-    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.intro-text p {
+    font-size: 2rem;
+    font-weight: lighter;
     height: 100vh;
     display: flex;
-    color: white;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
-    z-index: 3;
+    color: white;
 }
 
 .intro-app .message-fin {
     font-size: 1.25rem;
     font-weight: lighter;
     color: white;
-    position: absolute;
-    bottom: 3%;
-    display: flex;
+    position: sticky;
+    top: 3%;
     flex-direction: column;
     align-items: center;
     width: 100vw;
+    display: none;
 }
 
 .intro-app .message-fin img {
@@ -256,7 +264,7 @@ body {
 
 /************* AJOUTER ANIMATION *************** */
 /****************************************** */
-.donnerAnimation, .AnimationImg {
+.donnerAnimation{
     animation: opacity 2.2s ease-in-out;
 }
 
