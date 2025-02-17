@@ -272,6 +272,14 @@ body {
     animation: imageIntro 2.2s ease-in-out 200ms;
 }
 
+.animationCouleur{
+    animation: couleurSize 1.5s ease-in-out;
+}
+
+.DonnerAnimationBienvenue{
+    animation: floatOpacity 2.2s ease-in-out;
+}
+
 /************* ANIMATION SETUP *************** */
 /****************************************** */
 @keyframes slideIn {
@@ -300,5 +308,32 @@ body {
     100% {
         transform: translateX(0%);
         opacity: 1;
+    }
+}
+
+@keyframes couleurSize {
+    0% {
+        color: #CDF2FF;
+        scale: 1;
+    }
+    50% {
+        color: #00B0EE;
+        scale: 1.1;
+    }
+    100% {
+        color: #CDF2FF;
+        scale: 1;
+    }
+    
+}
+
+@keyframes floatOpacity {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
     }
 }

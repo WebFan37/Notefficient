@@ -3,6 +3,8 @@ window.onscroll = () => {
     handleScrollNote();
     handleScrollDesign();
     handleScrollUI();
+    handleScrollVideo();
+    handleScrollBienvenue();
 };
 
 //========================== PAGE INTRO (NOTE) =====================//
@@ -19,6 +21,13 @@ function handleScrollNote() {
         divNote.classList.add('donnerAnimation');
     } else {
         divNote.classList.remove('donnerAnimation');
+    }
+
+    //Animation apres 50% de la section
+    if (scrollY >= offsetUI + heightNote * 0.5) {
+        divNote.classList.add('animationCouleur');
+    } else {
+        divNote.classList.remove('animationCouleur');
     }
 }
 
@@ -56,7 +65,7 @@ function handleScrollUI() {
     const scrollY = window.scrollY;
     const offsetUI = sectionUI.offsetTop - 150;
     const heightUI = sectionUI.offsetHeight;
-    const pointAnimation = offsetUI + heightUI * 0.5; // 50% of the section
+    // const pointAnimation = offsetUI + heightUI * 0.5; // 50% of the section
 
     // Image animation
     if (scrollY >= offsetUI && scrollY < offsetUI + heightUI) {
@@ -68,9 +77,9 @@ function handleScrollUI() {
     }
 
     // Paragraph introduction at 50% scroll
-    if (scrollY >= pointAnimation && scrollY <= offsetUI + heightUI) {
-        console.log("C'est le moment pour ajouter les paragraphes !");
-    }
+    // if (scrollY >= pointAnimation && scrollY <= offsetUI + heightUI) {
+    //     console.log("C'est le moment pour ajouter les paragraphes !");
+    // }
 }
 
 
@@ -87,7 +96,7 @@ const video = document.querySelector('.presentation-video .holder video');
 video.pause();
 
 
-const scroll = () => {
+function handleScrollVideo() {
     const distance = window.scrollY - sectionVideo.offsetTop;
     const totalDistance = sectionVideo.clientHeight - window.innerHeight;
 
@@ -103,3 +112,26 @@ const scroll = () => {
 
 scroll()
 window.addEventListener('scroll', scroll);
+
+
+//========================== PAGE BIENVENUE =====================//
+//===========================================================//
+
+//section bienvenue 
+const sectionBienvenue = document.querySelector('.intro-app');
+
+//Paragraphe a animer
+const paragraphesBienvenue = document.querySelector('.intro-app .holder .message-fin');
+
+
+function handleScrollBienvenue (){
+    const scrollDistance = window.scrollY;
+    const offesetBienvenue = sectionBienvenue.offsetTop - 150;
+    const heightBienvenue = sectionBienvenue.offsetHeight; 
+
+
+    //Ajouter animation de la dernièr paragraphe après 80% de la section
+    if (scrollDistance >= offesetBienvenue + heightBienvenue * 0.8){
+       paragraphesBienvenue.classList.add("DonnerAnimationBienvenue"); 
+    }
+}
