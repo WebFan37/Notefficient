@@ -14,7 +14,8 @@ function handleScrollNote() {
     const offsetUI = UINote.offsetTop - 150;
     const heightNote = UINote.offsetHeight;
 
-    if (scrollY >= offsetUI && scrollY < offsetUI + heightNote) {
+    //Ajouter animation apres 30% de la section
+    if (scrollY >= offsetUI + heightNote * 0.3) {
         divNote.classList.add('donnerAnimation');
     } else {
         divNote.classList.remove('donnerAnimation');
@@ -32,6 +33,8 @@ function handleScrollDesign() {
     const offset = sectionDesign.offsetTop - 150;
     const heightDesign = sectionDesign.offsetHeight;
 
+
+    //Ajouter animation lors qu'on rentre dans la section
     if (scrollY >= offset && scrollY < offset + heightDesign) {
         h2.classList.add('donnerAnimationH2');
         image.classList.add('AnimationImg');
