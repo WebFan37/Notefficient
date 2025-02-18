@@ -3,7 +3,8 @@ body {
     font-family: "Fredoka", serif;
     margin: 0;
     padding: 0;
-}
+    overflow-x: hidden;
+}s
 
 /****************************************** */
 /* UI-NOTE SECTION 1 */
