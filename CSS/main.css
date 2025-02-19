@@ -35,7 +35,7 @@ body {
 /* DESIGN SECTION 2 */
 /****************************************** */
 .Design {
-    height: 500vh;
+    height: 250vh;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -54,12 +54,13 @@ body {
 }
 
 .text-Design div {
-    height: 100vh;
+    height:50vh;
     display: flex;
     align-items:center;
-    justify-content:center;
-    /* margin-right: 1rem; */
+    justify-content:flex-end;
+    margin-right: 2rem;
 }
+
 
 .text-Design div p:hover {
     animation: translatePara 2.5s ease-in-out;
@@ -84,7 +85,7 @@ body {
 /* UI DESCRIPTION SECTION 3 */
 /****************************************** */
 .UI-Description {
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -162,6 +163,7 @@ body {
 /****************************************** */
 .intro-app {
     position: relative;
+    top: 0;
     height: 500vh;
     background-image: linear-gradient(180deg, #CDF2FF, #00B0EE, #007BEE);
 }
