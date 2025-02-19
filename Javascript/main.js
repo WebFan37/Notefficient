@@ -119,28 +119,28 @@ scroll()
 window.addEventListener('scroll', scroll);
 
 
-//========================== PAGE BIENVENUE =====================//
-//===========================================================//
+// //========================== PAGE BIENVENUE =====================//
+// //===========================================================//
 
-//section bienvenue 
-const sectionBienvenue = document.querySelector('.intro-app');
+// //section bienvenue 
+// const sectionBienvenue = document.querySelector('.intro-app');
 
-//Paragraphe a animer
-const paragraphesBienvenue = document.querySelector('.intro-app .message-fin');
-
-
-function handleScrollBienvenue (){
-    const scrollDistance = window.scrollY;
-    const offesetBienvenue = sectionBienvenue.offsetTop - 150;
-    const heightBienvenue = sectionBienvenue.offsetHeight; 
+// //Paragraphe a animer
+// const paragraphesBienvenue = document.querySelector('.intro-app .message-fin');
 
 
-    //Ajouter animation de la dernièr paragraphe après 80% de la section
-    if (scrollDistance >= offesetBienvenue + heightBienvenue * 0.7){
-       paragraphesBienvenue.classList.add("DonnerAnimationBienvenue");
-       paragraphesBienvenue.style.display = "flex";
-    } else {
-        paragraphesBienvenue.classList.remove("DonnerAnimationBienvenue");
-       paragraphesBienvenue.style.display = "none";
-    }
-}
+// function handleScrollBienvenue (){
+//     const scrollDistance = window.scrollY;
+//     const offesetBienvenue = sectionBienvenue.offsetTop - 150;
+//     const heightBienvenue = sectionBienvenue.offsetHeight; 
+
+
+//     //Ajouter animation de la dernièr paragraphe après 80% de la section
+//     if (scrollDistance >= offesetBienvenue + heightBienvenue * 0.7){
+//        paragraphesBienvenue.classList.add("DonnerAnimationBienvenue");
+//        paragraphesBienvenue.style.display = "flex";
+//     } else {
+//         paragraphesBienvenue.classList.remove("DonnerAnimationBienvenue");
+//        paragraphesBienvenue.style.display = "none";
+//     }
+// }

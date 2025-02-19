@@ -62,9 +62,9 @@ body {
 }
 
 
-.text-Design div p:hover {
+/* .text-Design div p:hover {
     animation: translatePara 2.5s ease-in-out;
-}
+} */
 
 @keyframes translatePara {
     0% {
@@ -132,7 +132,7 @@ body {
 /* INTRO-VIDEO SECTION 4 */
 /****************************************** */
 .presentation-video {
-    height: 400vh;
+    height: 800vh;
     position: relative;
     font-size: 1.5rem;
 }
@@ -155,7 +155,14 @@ body {
     display: flex;
     align-items:center;
     justify-content: center;
-    
+    color: black;
+    font-weight: 400;
+}
+.Text-video div p{
+    text-align: center;
+}
+.Text-video div p img{
+    border-radius: 15px;
 }
 
 /****************************************** */
@@ -164,7 +171,7 @@ body {
 .intro-app {
     position: relative;
     top: 0;
-    height: 300vh;
+    height: 400vh;
    
 }
 
