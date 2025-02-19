@@ -91,10 +91,12 @@ body {
     align-items: center;
     position: relative;
 }
-.UI-Description h2{
-    text-align: center;
-    font-weight: lighter;
-    font-size: 2rem;
+.UI-Description .text-UI{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
 }
 
 .image-UI{
@@ -110,13 +112,16 @@ body {
 .image-UI img {
     width: 80%;
     object-fit: cover;
+    position: relative;
 
 }
 .UI-Description img:hover{
     transform: scale(1.05);
     transition: all 0.7s;
     box-shadow: 2px 2px 5px 2px #86badf;
+
 }
+
 
 
 
