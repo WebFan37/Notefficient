@@ -194,14 +194,15 @@ body {
 }
 
 .intro-app .message-fin {
-    font-size: 1.25rem;
     font-weight: lighter;
     color: white;
     position: sticky;
     top: 3%;
     flex-direction: column;
+    justify-content: end;
     align-items: center;
     width: 100vw;
+    height: 90vh;
     display: none;
 }
 
