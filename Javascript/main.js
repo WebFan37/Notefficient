@@ -126,7 +126,7 @@ window.addEventListener('scroll', scroll);
 const sectionBienvenue = document.querySelector('.intro-app');
 
 //Paragraphe a animer
-const paragraphesBienvenue = document.querySelector('.intro-app .holder .message-fin');
+const paragraphesBienvenue = document.querySelector('.intro-app .message-fin');
 
 
 function handleScrollBienvenue (){
@@ -136,7 +136,7 @@ function handleScrollBienvenue (){
 
 
     //Ajouter animation de la dernièr paragraphe après 80% de la section
-    if (scrollDistance >= offesetBienvenue + heightBienvenue * 0.8){
+    if (scrollDistance >= offesetBienvenue + heightBienvenue * 0.7){
        paragraphesBienvenue.classList.add("DonnerAnimationBienvenue");
        paragraphesBienvenue.style.display = "flex";
     } else {
