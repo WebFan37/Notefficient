@@ -57,8 +57,8 @@ body {
     height:50vh;
     display: flex;
     align-items:center;
-    justify-content:flex-end;
-    margin-right: 2rem;
+    justify-content:center;
+    
 }
 
 
@@ -239,6 +239,11 @@ body {
 
     .UI-Description{
         height: 100vh;
+    }
+
+    .text-Design div {
+        justify-content:flex-end;
+        margin-right: 2rem;
     }
 
 .image-UI {
