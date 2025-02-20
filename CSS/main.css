@@ -111,7 +111,7 @@ body {
 }
 
 .image-UI img {
-    width: 80%;
+    width: 85%;
     object-fit: cover;
     position: relative;
 
@@ -119,7 +119,7 @@ body {
 .UI-Description img:hover{
     transform: scale(1.05);
     transition: all 0.7s;
-    box-shadow: 2px 2px 5px 2px #86badf;
+    box-shadow: 2px 2px 2px 2px #86badf;
 
 }
 
