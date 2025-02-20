@@ -222,16 +222,16 @@ body {
     transition: all 0.7s;
 }
 
-/* .intro-app .cercle1, .intro-app .cercle2 {
+.cercle1, .cercle2 {
     position: absolute;
     top: 25%;
     height: 30vw;
     width: 30vw;
     border-radius: 50%;
     background-color: #01A3EE;
-} */
+}
 
-/* .intro-app .cercle1 {
+.intro-app .cercle1 {
     left: 0;
     transform: translateX(-50%);
 }
@@ -240,7 +240,7 @@ body {
     right: 0;
     transform: translateX(50%);
     overflow-x: hidden;
-} */
+}
 
 /************* ECRAN ADAPTATIF *************** */
 /****************************************** */
