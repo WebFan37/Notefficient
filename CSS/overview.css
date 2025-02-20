@@ -17,3 +17,14 @@ a:hover{
     position: sticky;
     top: 0;
 }
+input{
+    width: 20%;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 15px;
+   background-color: #80c1ff;
+   font-family: "Fredoka", serif;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: white;
+}
