@@ -116,11 +116,30 @@ body {
     position: relative;
 
 }
+.image-UI div{
+    position: relative;
+}
+.image-UI div p{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 0.25rem;
+    border-radius: 10px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.75s;
+}
 .UI-Description img:hover{
     transform: scale(1.05);
-    transition: all 0.7s;
+    transition: all 0.75s;
     box-shadow: 2px 2px 2px 2px #86badf;
 
+}
+.image-UI div img:hover + p{
+    opacity: 1;
+    
 }
 
 
@@ -164,7 +183,9 @@ body {
 .Text-video div p img{
     border-radius: 15px;
 }
-
+.Text-video a{
+    color: rgb(131, 131, 131);
+}
 /****************************************** */
 /* INTRO-APP SECTION 5 */
 /****************************************** */
