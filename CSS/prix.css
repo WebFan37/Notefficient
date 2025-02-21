@@ -1,0 +1,27 @@
+.comparaison-prix{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+   justify-content: center;
+
+}
+table{
+    margin: 1rem;
+    width: 90vw;
+}
+thead, tfoot{
+    background-color: #375daf;
+    color: rgb(255, 255, 255);
+}
+tbody{
+    background-color: #73bbff;
+    color: rgb(0, 0, 0);
+}
+
+td, th{
+    padding: 10px;
+}
+
+caption{
+    
+}
