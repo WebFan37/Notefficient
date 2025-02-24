@@ -168,6 +168,9 @@ body {
 }
 .Text-video div p{
     text-align: center;
+    background-color: beige;
+    padding: 1rem;
+    border-radius: 15px;
 }
 .Text-video div p img{
     border-radius: 15px;
