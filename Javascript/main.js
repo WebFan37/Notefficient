@@ -80,11 +80,6 @@ function handleScrollUI() {
         images.forEach(img => img.classList.remove('donnerAnimationUI'));
         images.forEach(img => img.style.display = "none");
     }
-
-    // Paragraph introduction at 50% scroll
-    // if (scrollY >= pointAnimation && scrollY <= offsetUI + heightUI) {
-    //     console.log("C'est le moment pour ajouter les paragraphes !");
-    // }
 }
 
 
@@ -119,28 +114,3 @@ scroll()
 window.addEventListener('scroll', scroll);
 
 
-// //========================== PAGE BIENVENUE =====================//
-// //===========================================================//
-
-// //section bienvenue 
-// const sectionBienvenue = document.querySelector('.intro-app');
-
-// //Paragraphe a animer
-// const paragraphesBienvenue = document.querySelector('.intro-app .message-fin');
-
-
-// function handleScrollBienvenue (){
-//     const scrollDistance = window.scrollY;
-//     const offesetBienvenue = sectionBienvenue.offsetTop - 150;
-//     const heightBienvenue = sectionBienvenue.offsetHeight; 
-
-
-//     //Ajouter animation de la dernièr paragraphe après 80% de la section
-//     if (scrollDistance >= offesetBienvenue + heightBienvenue * 0.7){
-//        paragraphesBienvenue.classList.add("DonnerAnimationBienvenue");
-//        paragraphesBienvenue.style.display = "flex";
-//     } else {
-//         paragraphesBienvenue.classList.remove("DonnerAnimationBienvenue");
-//        paragraphesBienvenue.style.display = "none";
-//     }
-// }
