@@ -13,7 +13,16 @@ body {
     height: 120vh;
     background-color: #CDF2FF;
 }
-
+.UI-Note h1{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: lighter;
+}
+.UI-Note h4{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
 .UI-Note div {
     display: flex;
     flex-direction: column;
@@ -59,21 +68,6 @@ body {
     align-items:center;
     justify-content:center;
     
-}
-
-@keyframes translatePara {
-    0% {
-        transform: translateX(0%);
-        font-weight: normal;
-    }
-    50% {
-        transform: translateX(50%);
-        font-weight: bold;
-    }
-    100% {
-        transform: translateX(0%);
-        font-weight: normal;
-    }
 }
 
 /****************************************** */
@@ -126,13 +120,13 @@ body {
     opacity: 0;
     transition: opacity 0.75s;
 }
-.UI-Description img:hover{
+.UI-Description img:active{
     transform: scale(1.05);
     transition: all 0.75s;
     box-shadow: 2px 2px 2px 2px #86badf;
 
 }
-.image-UI div img:hover + p{
+.image-UI div img:active + p{
     opacity: 1;
     
 }
@@ -308,6 +302,17 @@ body {
     height: 50%;
     object-fit: cover;
 }
+
+.UI-Description img:hover{
+    transform: scale(1.05);
+    transition: all 0.75s;
+    box-shadow: 2px 2px 2px 2px #86badf;
+
+}
+.image-UI div img:hover + p{
+    opacity: 1;
+    
+}
 }
 
 /************* ANIMATION *************** */
@@ -391,5 +396,20 @@ body {
     100% {
         opacity: 1;
         transform: translateY(0%);
+    }
+}
+
+@keyframes translatePara {
+    0% {
+        transform: translateX(0%);
+        font-weight: normal;
+    }
+    50% {
+        transform: translateX(50%);
+        font-weight: bold;
+    }
+    100% {
+        transform: translateX(0%);
+        font-weight: normal;
     }
 }
