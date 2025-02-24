@@ -61,11 +61,6 @@ body {
     
 }
 
-
-/* .text-Design div p:hover {
-    animation: translatePara 2.5s ease-in-out;
-} */
-
 @keyframes translatePara {
     0% {
         transform: translateX(0%);
@@ -186,6 +181,9 @@ body {
 .Text-video a{
     color: rgb(131, 131, 131);
 }
+
+
+
 /****************************************** */
 /* INTRO-APP SECTION 5 */
 /****************************************** */
@@ -312,7 +310,7 @@ body {
 }
 }
 
-/************* AJOUTER ANIMATION *************** */
+/************* ANIMATION *************** */
 /****************************************** */
 .donnerAnimation{
     animation: opacity 2.2s ease-in-out;
