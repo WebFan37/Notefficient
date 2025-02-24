@@ -4,7 +4,6 @@ window.onscroll = () => {
     handleScrollDesign();
     handleScrollUI();
     handleScrollVideo();
-    handleScrollBienvenue();
 };
 
 //========================== PAGE INTRO (NOTE) =====================//
